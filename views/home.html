@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/stylesheets/home.css"/>
+    <link rel="stylesheet" href="/stylesheets/bootstrap.css"/>
+    <script src="/javascripts/home.js"></script>
+    <script src="/javascripts/jquery-3.6.0.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script> 
+
+    <link rel="icon" type="pic/icon" href="/images/icon.jpg"> <!-- ICON -->
+    <title>快篩庫存查詢</title>
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+          width: 86%;
+          height: 100%;
+          margin: 8px var(--edge) 15px var(--edge);
+        }
+    </style>
+</head>
+
+<body >
+    <div class="page" style="background-color:#a0c1d4">
+        <div class="page-header">
+            <div class="logo">
+                <img src="/images/logo_1.gif" height="38px"/>    
+            </div>
+            <div class="nav">
+                <input type="button" value="註冊/登入" onclick="location.href='login.html'" />
+            </div>
+        </div>
+        <div id="demo" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/1.jpg" alt="protect1" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/2.jpg" alt="protect2" width="300" height="300">
+            </div>
+            <div class="carousel-item">
+                <img src="/images/3.jpg" alt="protect3" width="300" height="300">
+            </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    
+        <div class="search-div">
+            <select class="search-item" id="city">
+                <option value="%" >請選擇縣市</option>
+                <option value="基隆市" >基隆市</option>
+                <option value="臺北市" >臺北市</option>
+                <option value="新北市" >新北市</option>
+                <option value="桃園市" >桃園市</option>
+                <option value="新竹市" >新竹市</option>
+                <option value="新竹縣" >新竹縣</option>
+                <option value="苗栗縣" >苗栗縣</option>
+                <option value="臺中市" >臺中市</option>
+                <option value="彰化縣" >彰化縣</option>
+                <option value="南投縣" >南投縣</option>
+                <option value="雲林縣" >雲林縣</option>
+                <option value="嘉義市" >嘉義市</option>
+                <option value="嘉義縣" >嘉義縣</option>
+                <option value="臺南市" >臺南市</option>
+                <option value="高雄市" >高雄市</option>
+                <option value="屏東縣" >屏東縣</option>
+                <option value="臺東縣" >臺東縣</option>
+                <option value="花蓮縣" >花蓮縣</option>
+                <option value="宜蘭縣" >宜蘭縣</option>
+                <option value="澎湖縣" >澎湖縣</option>
+                <option value="金門縣" >金門縣</option>
+                <option value="連江縣" >連江縣</option>
+            </select>
+        
+            <select class="search-item" id="cityarea">
+                <option value="%" >請選擇城市</option>
+            </select>
+            <input class="search_btn" id="search_btn" type="button" value="查詢"> 
+        </div> 
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="pic/icon" href="/images/icon.jpg"> <!-- ICON -->
+    <title>查詢頁面</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" />
+    <link rel="stylesheet" href="/stylesheets/search.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/javascripts/search.js"></script>
+    <!-- List icon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    
+</head>
+
+<body style="background-color:#a0c1d4">
+    <div class="header">
+        <div class="nav container">
+            <div class="logo">
+                <img src="/images/logo_1.gif" height="38px" />
+            </div>
+            <div class="enroll">              
+                <input type="button" value="註冊/登入" onclick="location.href='login.html'" />
+            </div>
+            <i class='bx bxs-cart' id="cart-icon"></i>
+            <!-- Cart -->
+            <div class="cart">
+                <div class="cart-title">購物車</div>
+                <!--Content-->
+                <div class="cart-content">
+                    
+                </div>
+                <!---Total-->
+                <div class="total">
+                    <div class="total-title">總價</div>
+                        <div class="total-price">$0</div>
+                </div>
+                <!--Buy Button-->
+                <button type="button" class="btn-buy" onclick="location.href='login.html'">送出</button>
+                <!-- Cart Close-->
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="search-table">
+        <select class="search" id="city">
+            <option value="基隆市">基隆市</option>
+            <option value="臺北市">臺北市</option>
+            <option value="新北市">新北市</option>
+            <option value="桃園市">桃園市</option>
+            <option value="新竹市">新竹市</option>
+            <option value="新竹縣">新竹縣</option>
+            <option value="苗栗縣">苗栗縣</option>
+            <option value="臺中市">臺中市</option>
+            <option value="彰化縣">彰化縣</option>
+            <option value="南投縣">南投縣</option>
+            <option value="雲林縣">雲林縣</option>
+            <option value="嘉義市">嘉義市</option>
+            <option value="嘉義縣">嘉義縣</option>
+            <option value="臺南市">臺南市</option>
+            <option value="高雄市">高雄市</option>
+            <option value="屏東縣">屏東縣</option>
+            <option value="臺東縣">臺東縣</option>
+            <option value="花蓮縣">花蓮縣</option>
+            <option value="宜蘭縣">宜蘭縣</option>
+            <option value="澎湖縣">澎湖縣</option>
+            <option value="金門縣">金門縣</option>
+            <option value="連江縣">連江縣</option>
+        </select>
+
+        <select class="search" id="cityarea"></select>
+
+        <input id="search_btn" type="button" value="查詢">
+    </div>
+
+    <div class="content">
+        <div class="item-list"></div>
+        <iframe class="map" frameborder="0" src="https://maps.google.com.tw/maps?&q=台灣&hl=zh-TW&z=10&t=&output=embed">
+        </iframe>
+    </div>
+
+    <div id="test"></div>
+    <script src="/javascripts/search.js"></script>
+</body>
+
+</html>
+
+<!-- 
+    javascript檔案內容的相對路徑為引用此檔案的html檔所在位置。
+ -->

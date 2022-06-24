@@ -1,0 +1,78 @@
+:root{
+    --edge: 7%;
+    --main-color: #fa0000;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+.page-header{
+    display: flex;
+    padding-bottom: 5px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+}
+.nav input{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border-style: hidden;  
+    margin-left: 1040px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.nav input:hover{
+    color:#21688b;
+}
+.carousel-inner .item img {
+    position: absolute;
+    padding-left: 7%;
+    margin: 0px var(--edge) 15px var(--edge);
+  }
+.search-table{
+    background-color:#a0c1d4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    font-weight: normal;
+}
+.search{
+    font-size: 18px;
+    width: 27%;
+    height: 30px;
+    border: 0.5px solid #1a56c6;
+    margin-right: 2%;
+}
+
+.search_btn{
+    margin-top: 8px;
+    font-size: 18px;
+    width: 200px;
+    height: 43px;
+    color: white;
+    background-color: #1a56c6;
+    border: 0px;
+    border-radius: 5px;
+}
+.search_btn:hover{
+    color: #000000;
+    background-color: rgb(249, 221, 138);
+}
+
+
+/* 以下為暫時修正的區域 */
+.logo{
+    margin-top: 15px;
+    margin-left: 90px;
+}
+
+.search-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5x;
+    margin: 0px var(--edge) 15px var(--edge);
+}
+.search-item{
+    width: 230px;
+} 
+

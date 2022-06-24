@@ -1,0 +1,256 @@
+:root{
+    --edge: 10%;
+    --main-color: #fa0000;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+}
+.container{
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+}
+
+/* Header*/
+.header{
+    position: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 14%;
+    box-shadow: 0 3px 5px rgba(27, 25, 25, 0.1);
+}
+.nav{
+    display: flex;
+    padding: 6px 0;
+}
+
+/* Cart */
+.logo{
+    margin-left: -90px;
+} 
+
+.enroll{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 8px;
+    margin-left: 890px;
+}
+
+.enroll input{
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border-style: hidden;  
+    cursor: pointer;
+}
+.enroll input:hover{
+    color:#21688b;
+}
+#cart-icon{
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-top: 9px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+#cart-icon:hover{
+    color:#21688b;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    min-height: 80vh;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: rgb(230, 230, 230);
+    box-shadow:3px 3px 5px 6px #416281;
+
+    transition: 0.3s;
+}
+.cart.active{
+    right: 0;
+    backdrop-filter: blur(5px);
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 2px;
+    border-bottom: 0.5px #000000 solid;
+}
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 8px;
+    margin: 5px 5px 0px 5px;
+    border-bottom: 0.5px #000000 solid;
+}
+.detail-box{
+    padding-left: 0px;
+}
+.cart-product-title{ 
+    color: #295bd9;
+    font-size: 0.8rem;
+}
+.cart-address{
+    font-size: 0.6rem;
+    font-weight: 200;
+}
+.cart-phone{
+    font-size: 0.6rem;
+}
+.cart-price{
+    font-size: 0.6rem;
+}
+.cart-quantity{
+    font-size: 0.6rem;
+}
+.cart-remove{
+    font-size: 20px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding-left: 4px;
+}
+.cart-remove:hover{
+    color: #fa0000;
+}
+.total{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+    border-top: 3px solid var(--txt-color);
+}
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price{
+    margin-left: 0.5rem;
+    margin-top: 0.1rem;
+}
+.btn-buy{
+    display: flex;
+    margin: 0.5rem auto 0 auto;
+    padding: 8px 18px;
+    border: none;
+    background: var(--main-color);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+.btn-buy:hover{
+    background-color: var(--text-color);
+}
+.search-table{
+    padding-top: 8px;
+    padding-left: var(--edge);
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    width: calc(100%-300px); 
+}
+.search{
+    font-size: 15px;
+    height: 35px;
+    width: 20%;
+    border-radius: 3px;
+    border:0.5px #1a56c6 solid;
+    text-align: center;
+    margin-right: 15%;
+}
+#search_btn{
+    font-size: 15px;
+    width: 15%;
+    height: 35px;
+    margin-left: 3%;
+    color: white;
+    background-color: #4378ff;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#search_btn:hover{
+    color: #000000;
+    background-color: rgb(249, 221, 138);
+}
+.content{
+    margin: 4px var(--edge) 15px var(--edge);
+    height: 500px;
+}
+.item-list{
+    float: left;
+    width: 30%;
+    height: inherit;
+    overflow-y: scroll;
+}
+.item{
+    font-size: 5px;
+    height: auto;
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-color: #c7d5f4; 
+}
+.item:hover{
+    background-color: #9fbafa; 
+}
+.name{
+    font-size: 15px;
+    font-weight: bold;
+    color: #295bd9;
+    text-align: center;
+}
+.count_div{ 
+    box-sizing: border-box;
+    height: 25px;
+    border-radius: 5px;
+    background-color: beige;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.count{
+    font-size: 15px;
+}
+.add-cart{
+    height: 20px;
+    width: 80px;
+    color: white;
+    background-color: #4378ff;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.add-cart:hover{
+    color: #000000;
+    background-color: rgb(180, 235, 126);
+}
+.map{
+    float: left;
+    width: 70%;
+    height: inherit;
+}
